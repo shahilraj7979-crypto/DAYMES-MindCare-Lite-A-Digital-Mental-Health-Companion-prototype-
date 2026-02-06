@@ -1,0 +1,20 @@
+function saveMood() {
+  let mood = document.getElementById("mood").value;
+  let moods = JSON.parse(localStorage.getItem("moods")) || [];
+  moods.push(mood);
+  localStorage.setItem("moods", JSON.stringify(moods));
+  showHistory();
+}
+
+function showHistory() {
+  let moods = JSON.parse(localStorage.getItem("moods")) || [];
+  let list = document.getElementById("history");
+  list.innerHTML = "";
+  moods.forEach(m => {
+    let li = document.createElement("li");
+    li.textContent = m;
+    list.appendChild(li);
+  });
+}
+
+showHistory();
