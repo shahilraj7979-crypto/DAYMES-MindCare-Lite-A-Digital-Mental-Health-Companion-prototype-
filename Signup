@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MindCare Lite – Sign Up</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="center">
+
+  <div class="card">
+    <img src="images/logo.png" class="logo">
+    <h2>Create Account</h2>
+    <p>Talk · Share · Heal</p>
+
+    <input id="email" placeholder="Email">
+    <input id="password" type="password" placeholder="Password">
+
+    <button onclick="signup()">Sign Up</button>
+
+    <p class="link">
+      Already have an account? <a href="index.html">Login</a>
+    </p>
+  </div>
+
+  <script src="js/auth.js"></script>
+</body>
+</html>
