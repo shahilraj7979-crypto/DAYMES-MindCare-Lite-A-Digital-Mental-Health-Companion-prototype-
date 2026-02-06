@@ -1,0 +1,14 @@
+function signup() {
+  localStorage.setItem("user", document.getElementById("email").value);
+  alert("Account created successfully!");
+  window.location.href = "index.html";
+}
+
+function login() {
+  let user = localStorage.getItem("user");
+  if (user) {
+    window.location.href = "dashboard.html";
+  } else {
+    alert("Please sign up first");
+  }
+}
