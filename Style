@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* LOGIN / SIGNUP BACKGROUND */
+.center {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background:
+    linear-gradient(rgba(255,182,193,0.65), rgba(255,182,193,0.65)),
+    url("../images/login-bg.png") no-repeat center/cover;
+}
+
+/* DASHBOARD BACKGROUND */
+.pink-bg {
+  background: #ffe4ec;
+  min-height: 100vh;
+}
+
+/* GLASS CARD */
+.card {
+  background: rgba(255,255,255,0.25);
+  backdrop-filter: blur(14px);
+  padding: 35px;
+  width: 360px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.logo-small {
+  width: 40px;
+}
+
+/* INPUTS */
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: none;
+}
+
+/* BUTTON */
+button {
+  width: 100%;
+  padding: 12px;
+  background: #ec4899;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #db2777;
+}
+
+.link a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* HEADER */
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px 30px;
+  background: #ec4899;
+  color: white;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+/* DASHBOARD BOX */
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
