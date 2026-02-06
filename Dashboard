@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MindCare Lite – Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="pink-bg">
+
+<header class="topbar">
+  <img src="images/logo.png" class="logo-small">
+  <h2>MindCare Lite</h2>
+</header>
+
+<section class="hero">
+  <h1>How are you feeling today?</h1>
+  <p>Your safe digital space for mental well-being</p>
+</section>
+
+<section class="grid">
+
+  <div class="box">
+    <h3>😊 Mood Tracker</h3>
+    <select id="mood">
+      <option>Happy</option>
+      <option>Calm</option>
+      <option>Sad</option>
+      <option>Stressed</option>
+    </select>
+    <button onclick="saveMood()">Save Mood</button>
+    <ul id="history"></ul>
+  </div>
+
+  <div class="box">
+    <h3>💬 MindCare Bot</h3>
+    <input id="chatInput" placeholder="Tell me how you feel">
+    <button onclick="chat()">Send</button>
+    <p id="chatReply"></p>
+  </div>
+
+</section>
+
+<script src="js/mood.js"></script>
+<script src="js/chatbot.js"></script>
+</body>
+</html>
